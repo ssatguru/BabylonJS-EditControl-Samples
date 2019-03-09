@@ -11,8 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "babylonjs": "^3.3.0",
-    "babylonjs-editcontrol": "^3.2.0",
-    "earcut": "^2.1.5",
+    "babylonjs-editcontrol": "^3.2.1",
     "pepjs": "^0.4.3",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
