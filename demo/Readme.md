@@ -13,6 +13,5 @@ run "npm run build" to build the demo.
 The dependencies are
 * pepjs  - A polyfill to provide pointer support on old browser. Forced into the bundle by adding it as as an entry in webpack.config.js.
 * babylonjs
-* earcut - EditControl uses the babylon class "PolygonMeshBuilder" which needs earcut.
 * babylonjs-editcontrol
 
