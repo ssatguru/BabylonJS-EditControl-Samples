@@ -10,7 +10,6 @@ The dependencies needed are
 * requirejs
 * pepjs  - A polyfill to provide pointer support on old browser. 
 * babylonjs
-* earcut - EditControl uses the babylon class "PolygonMeshBuilder" which needs earcut.
 * babylonjs-editcontrol
 
 ## Run
