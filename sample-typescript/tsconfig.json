@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "declaration":false,
+    "declaration": false,
     "target": "es5",
     "module": "es2015",
     "moduleResolution": "node",
@@ -10,6 +10,10 @@
     "removeComments": false,
     "noImplicitAny": false
   },
-  "include": ["./src/index.ts"]
+  "include": [
+    "./src/index.ts"
+  ],
+  "exclude": [
+    "./node-modules/**/*"
+  ]
 }
-

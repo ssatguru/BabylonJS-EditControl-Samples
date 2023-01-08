@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: ['./src/index.ts','./node_modules/pepjs/dist/pep.min.js'],
+  entry: ['./src/index.ts', './node_modules/pepjs/dist/pep.js'],
   devtool: 'source-map',
   module: {
     rules: [
@@ -13,7 +13,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ]
+    extensions: ['.tsx', '.ts', '.js']
   },
   output: {
     filename: 'bundle.js',

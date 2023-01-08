@@ -6,12 +6,12 @@ window.onload = function () {
     main();
 }
 
-let main = function() {
+let main = function () {
 
-    let canvas:HTMLCanvasElement = <HTMLCanvasElement> document.getElementById("renderCanvas");
+    let canvas: HTMLCanvasElement = <HTMLCanvasElement>document.getElementById("renderCanvas");
     let engine = new BABYLON.Engine(canvas, true);
     let scene = addScene(engine);
-    let camera = addCamera(scene,canvas);
+    let camera = addCamera(scene, canvas);
     let grid = addGrid(scene);
     let box = addBox(scene);
     let editControl = addEditControl(box, camera, canvas)
@@ -30,13 +30,13 @@ let main = function() {
 
 let addScene = function (engine) {
     let scene = new BABYLON.Scene(engine);
-    scene.clearColor = new BABYLON.Color4(0.75, 0.75, 0.75,1);
+    scene.clearColor = new BABYLON.Color4(0.75, 0.75, 0.75, 1);
     let light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
     light.intensity = .5;
     return scene;
 };
 
-let addCamera = function (scene,canvas) {
+let addCamera = function (scene, canvas) {
     let camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", Math.PI / 4, Math.PI / 4,
         20, new BABYLON.Vector3(0, 0, 0), scene);
     camera.wheelPrecision = 15;
@@ -71,10 +71,10 @@ let addEditControl = function (mesh, camera, canvas) {
     //"Eulerian is set to false but the mesh's rotationQuaternion is not set."
     mesh.rotationQuaternion = BABYLON.Quaternion.Identity();
 
-    
+
     //create edit control (mesh to attach to,camera, canvas, scale of editcontrol, if doing rotation in euler)
-    let ec:EditControl = new EditControl(mesh, camera, canvas, 0.75, false, 0.02);
-    
+    let ec: EditControl = new EditControl(mesh, camera, canvas, 0.75, false, 0.02);
+
     //show translation controls
     ec.enableTranslation();
 
